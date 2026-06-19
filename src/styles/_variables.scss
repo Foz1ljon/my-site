@@ -1,0 +1,43 @@
+// ============================================================
+//  Slate Navy — professional dark design tokens
+// ============================================================
+
+// — Surfaces ————————————————————————————————
+$ink:        #0b0f15;  // deep charcoal-navy
+$ink-2:      #0e131a;
+$surface:    #131922;
+$surface-2:  #19212c;
+$line:       rgba(255, 255, 255, 0.07);
+$line-strong: rgba(255, 255, 255, 0.14);
+
+// — Text ————————————————————————————————————
+$paper:      #EEF2F7;  // cool near-white for headings
+$text:       #C3CCD8;
+$muted:      #8893a3;
+$faint:      #586273;
+
+// — Accent (muted steel-blue, single signature) ——
+$accent:      #8aa6cc;
+$accent-deep: #6c87ad;
+$accent-soft: rgba(138, 166, 204, 0.12);
+// legacy aliases (kept so older refs resolve to the new accent)
+$lime:       $accent;
+$lime-deep:  $accent-deep;
+$violet:     #6c87ad;
+$cyan:       #8aa6cc;
+
+// — Typography ——————————————————————————————
+$font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+$font-body:    'Inter', 'Segoe UI', sans-serif;
+$font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+// — Layout ——————————————————————————————————
+$max-width: 1180px;
+$radius:    12px;
+$radius-sm: 8px;
+
+// — Breakpoints ——————————————————————————————
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

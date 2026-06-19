@@ -1,0 +1,4 @@
+// Single entry-point for component styles.
+//   @use '../styles/theme' as *;
+@forward 'variables';
+@forward 'mixins';

@@ -1,0 +1,53 @@
+@use 'variables' as *;
+
+// — Responsive: min-width media queries —————————————
+@mixin from($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+// — Responsive: max-width (mobile-first overrides) ——
+@mixin until($bp) {
+  @media (max-width: ($bp - 0.02px)) { @content; }
+}
+
+// — Centered content container ————————————————————
+@mixin container {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-inline: clamp(1.15rem, 5vw, 2.5rem);
+}
+
+// — Glass card surface ————————————————————————————
+@mixin glass {
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  border: 1px solid $line;
+  border-radius: $radius;
+  backdrop-filter: blur(14px);
+}
+
+// — Subtle accent gradient text (used sparingly) ———
+@mixin gradient-text($from: $paper, $to: $lime) {
+  background: linear-gradient(100deg, $from 55%, $to);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// — Hairline kicker / mono label ——————————————————
+@mixin kicker {
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $faint;
+}
+
+// — Focus ring ————————————————————————————————————
+@mixin focus-ring {
+  outline: none;
+  &:focus-visible {
+    outline: 2px solid $lime;
+    outline-offset: 3px;
+  }
+}
