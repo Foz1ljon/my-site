@@ -15,8 +15,8 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "2+", label: "Years building for production" },
-  { value: "10+", label: "Shipped projects & modules" },
+  { value: "1+", label: "Years building for production" },
+  { value: "4+", label: "Shipped projects & modules" },
   { value: "15+", label: "Technologies in the toolkit" },
 ];
 
@@ -35,7 +35,7 @@ export const experience: Experience[] = [
     period: "Jan 2026 — Present",
     current: true,
     points: [
-      "Developed and maintained official websites for government agencies, ensuring high accessibility and compliance with state digital standards.",
+      "Developed and maintained official apps for government agencies, ensuring high accessibility and compliance with state digital standards.",
       "Implemented complex modules including secure E-imzo (digital signature) integration using Vue 3, TypeScript and Ant Design.",
       "Collaborated with a cross-functional team to deliver scalable and secure web solutions for public-sector clients.",
     ],
@@ -97,7 +97,7 @@ export interface SkillGroup {
 
 export const skills: SkillGroup[] = [
   { label: "Languages", items: ["JavaScript", "TypeScript"] },
-  { label: "Backend", items: ["Node.js", "Express.js", "Fastify.js", "NestJS"] },
+  { label: "Backend", items: ["Node.js", "Express.js", "Fastify.js", "NestJS", "BullMQ", "TypeORM"] },
   {
     label: "Frontend",
     items: ["Vue", "Nuxt.js", "HTML5", "CSS3", "SASS", "Tailwind", "Pinia", "TanStack Query", "Ant Design", "Element UI", "ElectronJS", "Capacitor", "Axios"],

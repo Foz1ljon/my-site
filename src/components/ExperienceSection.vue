@@ -45,6 +45,7 @@
     display: grid;
     gap: 1.4rem;
     padding-left: 1.7rem;
+    list-style: none;
 
     &::before {
       content: "";
